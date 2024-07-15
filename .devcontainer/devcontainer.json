@@ -11,7 +11,7 @@
 	},
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "./.devcontainer/postCreateCommand.sh"
+	"postCreateCommand": "python -m venv .venv && poetry install"
 
 	// Configure tool-specific properties. More info: https://containers.dev/supporting
 	// "customizations": {
